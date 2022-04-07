@@ -1,3 +1,373 @@
-h1{
-    text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Lobster&family=Roboto:ital,wght@1,300;1,500&family=Smooch+Sans:wght@600&family=Ubuntu:wght@700&family=Work+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Lobster&family=Roboto:ital,wght@1,300;1,500&family=Smooch+Sans:wght@600&family=Titillium+Web:wght@700&family=Ubuntu:wght@700&family=Work+Sans:wght@500&display=swap');
+html{
+    font-size: 10px;
 }
+body{
+    position: relative; 
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSza2q6h1gW_HS0Ihsya_OveEVLvEALkcbKCQ&usqp=CAU") center/ cover no-repeat;
+    /* background-repeat: no-repeat;
+    background-position: center; */
+
+    
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+.box{
+    width: 100%;
+    margin: auto;
+}
+.contant{
+    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: beige;
+} 
+
+
+.diceImage{
+ height: 10rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+}
+.dicedisplay{
+    display: none;
+}
+.heading{
+    font-family:'Inspiration', cursive; 
+    color:black;
+    border-radius: 2rem;
+    background-color: bisque;
+    text-transform: uppercase;
+    letter-spacing: 2rem;
+    font-size: 6rem;
+    font-weight: 900;
+}
+.player{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5rem;
+}
+
+.row1{
+    height: 13rem;
+}
+.new{
+    font-size: 2rem;
+    border-radius: 2rem;
+    background-color: bisque;
+}
+.new:hover{
+    background-color : black;
+    color: aliceblue;  
+    
+}
+.new:active{
+    background-color: red;
+}
+.totalscore{
+    font-size: 8rem;
+    color: red;
+}
+.roll{
+    font-size: 2rem;
+    border-radius: 2rem;
+    background-color: bisque;
+    margin-top: 2rem;
+}
+.roll:hover{
+    background-color : black;
+    color: aliceblue;  
+}
+.roll:active{
+    background-color: red;
+}
+.curentscore{
+    font-size: 3rem;
+    
+}
+.cscore{
+    font-size: 4rem;
+    
+}
+.holdButton{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    background-color: bisque;
+}
+.holdButton:hover{
+    background-color : black;
+    color: aliceblue;  
+}
+.holdButton:active{
+    background-color: red;
+}
+button{
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+.playingOn{
+    background-color: rgb(247, 157, 157);
+}
+.cont{
+    display: none;
+}
+.activePlay{
+    background-color: rgb(111, 124, 113);
+}
+
+@media (max-width: 998px){
+    html{
+        font-size: 9px;
+    }
+    .roll{
+        font-size: 2rem;
+        padding: 0.5rem;
+    }
+    .new{
+        padding: 0.5rem;
+        margin-top: 2rem;
+    }
+            
+}
+@media (max-width: 990px){
+    .row{
+        height: 10rem;
+    }
+    html{
+        font-size: 8px;
+    }
+    .roll{
+        font-size: 2rem;
+        padding: 0.5rem;
+    }
+    .new{
+        padding: 0.5rem;
+    }
+            
+}
+@media (max-width: 768px){
+    .row{
+        height: 10rem;
+    }
+    html{
+        font-size: 7px;
+    }
+
+    .heading{
+        display: flex;
+        align-items: center;
+    }
+    .curentscore{
+        font-size: 5rem;
+        /* position: relative;
+        top: 2rem; */
+    }
+    .cscore{
+        font-size: 6rem;
+    }
+    .holdButton{
+        font-size: 2rem;
+        padding: 1rem;
+        letter-spacing: 0.3rem;
+    }
+    .roll{
+        font-size: 2.5rem;
+        padding: 0.5rem;
+    }
+    .totalscore{
+        font-size: 8rem;
+    }
+    .diceImage{
+        height: 8rem;
+    }
+    .new{
+        padding: 0.5rem;
+        letter-spacing: 0.3rem;
+        font-weight: bold;
+    }
+}
+ @media (max-width : 522px){
+    .row{
+        height: 14rem;
+    }
+    html{
+        font-size: 6px;
+    }
+    .heading{
+        font-size:7rem;
+       
+    }
+    .diceImage{
+        height: 9rem;
+    }
+    .row{
+        height: 10rem;
+    }
+    .holdButton{
+        font-size: 2rem;
+        padding: 1rem;
+        letter-spacing: 0.3rem;
+    }
+    .roll{
+        font-size: 2.5rem;
+        padding: 0.5rem;
+        letter-spacing: 0.3rem;
+    }
+    .totalscore{
+        font-size: 8rem;
+    }
+    .new{
+        padding: 0.5rem;
+        margin-top: 2rem;
+        letter-spacing: 0.3rem;
+        font-weight: bold;
+    }
+} 
+@media (max-width :488px) {
+    
+    html{
+        font-size: 4px;
+    }
+    .row{
+        height: 10rem;
+    }
+    .heading{
+        font-size:6rem;
+        letter-spacing: 4rem;
+        font-weight: bolder;
+    }
+     .player{
+        font-size: 7rem;
+    } 
+    /* .totalscore{
+        margin-top: 5rem;
+    } */
+    .diceImage{
+        height: 6rem;
+        margin-top: 5rem;
+    }
+    .holdButton{
+        font-size: 3rem;
+        padding: 1rem;
+        letter-spacing: 0.3rem;
+    }
+    .roll{
+        font-size: 3rem;
+        padding: 0.5rem;
+        letter-spacing: 0.3rem;
+        margin-top: 5rem;
+    }
+    .totalscore{
+        font-size: 8rem;
+    }
+    .new{
+        font-size: 2.5rem;
+        padding: 0.5rem;
+        margin-top: 5rem;
+        letter-spacing: 0.3rem;
+        font-weight: bold;
+    }
+} 
+@media (max-width :404px) {
+    
+    html{
+        font-size: 4px;
+    }
+    .row{
+        height: 18rem;
+    }
+    .heading{
+        font-size:6rem;
+        letter-spacing: 4rem;
+        font-weight: bolder;
+    }
+     .player{
+        font-size: 6.5rem;
+    } 
+    /* .totalscore{
+        margin-top: 5rem;
+    } */
+    .diceImage{
+        height: 8.5rem;
+        margin-top: 5rem;
+    }
+    .holdButton{
+        font-size: 3rem;
+        padding: 1rem;
+        letter-spacing: 0.3rem;
+    }
+    .roll{
+        font-size: 3rem;
+        padding: 0.5rem;
+        letter-spacing: 0.3rem;
+        margin-top: 5rem;
+    }
+    .totalscore{
+        font-size: 14rem;
+    }
+    .curentscore{
+        font-size: 8rem;
+    }
+    .cscore{
+        font-size: 12rem;
+    }
+    .new{
+        font-size: 3rem;
+        padding: 0.5rem;
+        margin-top: 5rem;
+        letter-spacing: 0.3rem;
+        font-weight: bold;
+    }
+} 
+@media (max-width :270px) {
+    
+    html{
+        font-size: 2px;
+    }
+    .row{
+        height:10rem;
+    }
+    .heading{
+        font-size:6rem;
+        letter-spacing: 4rem;
+        font-weight: bolder;
+    }
+    /* .player{
+        margin-top: 5rem;
+    } */
+    /* .totalscore{
+        margin-top: 5rem;
+    } */
+    .diceImage{
+        height: 6rem;
+        margin-top: 5rem;
+    }
+    .row{
+        height: 10rem;
+    }
+    .holdButton{
+        font-size: 2rem;
+        padding: 1rem;
+        letter-spacing: 0.3rem;
+    }
+    .roll{
+        font-size: 2.5rem;
+        padding: 0.5rem;
+        letter-spacing: 0.3rem;
+        margin-top: 5rem;
+    }
+    .totalscore{
+        font-size: 8rem;
+    }
+    .new{
+        font-size: 2rem;
+        padding: 0.5rem;
+        margin-top: 5rem;
+        letter-spacing: 0.3rem;
+        font-weight: bold;
+    }
+} 
